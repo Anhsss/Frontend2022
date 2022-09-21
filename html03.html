@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML 시멘틱 태그</title>
+  <style>
+    /*내부 스타일*/
+    *{
+      margin: 0px;
+    }
+    /*태그 선택자*/
+    ul{
+      background-color:khaki;
+    }
+    span{
+      background-color: chartreuse;
+      width: 300px;
+      height: 20px;
+    }
+    /*클래스 선택자*/
+    .idc1{
+      background-color: aqua;
+    }
+    /*아이디 선택자*/
+    #sid2{
+      background-color:darkkhaki;
+      padding: 20px;
+      border-left:purple;
+      border-left: 10px;
+      border-left-style: solid;
+    }
+    /*복합 선택자*/
+    header{
+      background-color: cadetblue;
+      margin: 30px;
+      padding: 20px;
+      width: 500px;
+      height: 50px;
+      border-left: 10px;
+      border-left-style: 2px dotted;
+      border-left: red;
+      
+      /*margin-top: 20px;
+      margin-right: 10px;
+      margin-bottom: 30px;
+      margin-left: 50px;
+      */
+    }
+    nav>ul{
+      background-color: bisque;
+    }
+    aside li{
+      background-color:blueviolet;
+    }
+    /*가상 선택자*/
+    a {
+      text-decoration: none;
+      color:chocolate;
+    }
+    a:hover{
+      background-color: honeydew;
+      color:chocolate;
+
+    }
+    a:active{
+      background-color: blue;
+      color:coral
+    }
+   ul{
+      list-style: none;
+   }
+   footer{
+    background-color: darkmagenta;
+   }
+
+  </style>
+</head>
+<body>
+<header>
+  <span>안현수</span>
+</header>
+<nav>
+  <ul>
+    <li><a href="#sid1">개인정보</a></li>
+    <li><a href="#sid2">개인정보</a></li>
+    <li><a href="#sid3">학력사항</a></li>
+    <li><a href="#sid4">사용가능언어</a></li>
+    <li><a href="#sid5">참고사이트</a></li>
+  </ul>
+</nav>
+<main>
+  <section id="sid1">
+    <h1>개인정보</h1>
+    <ul>
+      <li class="idc1"></li>
+      <li class="idc2"></li>
+    </ul>
+  </section>
+  <section id="sid2">
+    <h1>학력사항</h1>
+    <ul>
+      <li class="idc1"></li>
+      <li class="idc2"></li>
+    </ul>
+  </section>
+  <section id="sid3">
+    <h1>자격사항</h1>
+    <ul>
+      <li class="idc1"></li>
+      <li class="idc2"></li>
+    </ul>
+  </section>
+  <section id="sid4">
+    <h1>사용가능언어</h1>
+    <ul>
+      <li class="idc1"></li>
+      <li class="idc2"></li>
+    </ul>
+  </section>
+</main>
+<aside id ="sid5"> 
+  <h1>참고사이트</h1>
+    <ul>
+      <li class="idca1"></li>
+      <li class="idca2"></li>
+    </ul>
+</aside>
+<footer>부산대 K-디지털</footer>
+</body>
+</html>
