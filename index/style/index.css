@@ -1,0 +1,66 @@
+/*전체 적용*/
+*{
+  margin:0px;
+  padding:0px;
+}
+
+/*레이아웃*/
+nav{
+  background-color:cornflowerblue;
+  padding:12px;
+  display: flex;
+  justify-content: space-between;
+  color:white
+}
+nav > ul{
+  display: flex;
+  list-style: none;
+}
+header{
+  background-color: aqua;
+}
+header > section{
+  display: flex;
+}
+.header_left, .header_right{
+  margin: 20;
+}
+.header_left{
+  width: 30%;
+  text-align: center;
+  margin: 20px;
+}
+.header_right{
+  width: 70%;
+  margin: 20px;
+
+}
+main{
+  background-color:darkgray;
+  display: flex;
+}
+main > section{
+  width: 25%;
+  margin: 20px;
+  text-align: center;
+}
+img{
+  border-radius: 25%;
+}
+footer{
+  background-color: dodgerblue;
+  display:flex;
+  justify-content: center;
+  color:chartreuse
+}
+footer > h2, footer > ul{
+  margin: 10px;
+}
+footer > ul{
+  list-style: none;
+}
+
+h2{
+  color:cornsilk
+}
+
