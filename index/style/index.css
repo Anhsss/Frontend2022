@@ -10,7 +10,9 @@ nav{
   padding:12px;
   display: flex;
   justify-content: space-between;
-  color:white
+  color:white;
+  top: 0;
+  
 }
 nav > ul{
   display: flex;
@@ -38,6 +40,7 @@ header > section{
 main{
   background-color:darkgray;
   display: flex;
+  /*flex-wrap: wrap;*/
 }
 main > section{
   width: 25%;
@@ -47,11 +50,16 @@ main > section{
 img{
   border-radius: 25%;
 }
+h2{
+  color:cornsilk
+}
 footer{
   background-color: dodgerblue;
   display:flex;
   justify-content: center;
-  color:chartreuse
+  color:chartreuse;
+  bottom: 0px;
+  position: sticky;
 }
 footer > h2, footer > ul{
   margin: 10px;
@@ -59,8 +67,26 @@ footer > h2, footer > ul{
 footer > ul{
   list-style: none;
 }
+@media only screen and (max-width:600px){
+  header > section {
+    flex-direction: column;
+    align-items: center;
+  }
+  main{
+    flex-direction: column;
+      align-items: center;
+  }
 
-h2{
-  color:cornsilk
+
+  .header_left, .header_right{
+    width: 80%;
+  }
+
+main > section{
+  width: 80%;
+  text-align: center;
 }
-
+footer > ul{
+  display: none;
+  }
+}
